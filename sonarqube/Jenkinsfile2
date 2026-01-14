@@ -3,7 +3,7 @@ node {
     gradleImage.pull()
 
     stage('Checkout') {
-        git branch: 'main', url: 'https://github.com/macloujulian/gs-gradle.git'
+        git branch: 'main', url: 'https://github.com/Marco180800/sonarquebCursoJenkins.git'
     }
 
     stage('Build') {
