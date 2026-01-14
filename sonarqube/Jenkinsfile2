@@ -20,6 +20,7 @@ node {
             gradleImage.inside('-v $HOME/.gradle:/home/gradle/.gradle') {
                 sh '''
                   cd complete
+                  gradle build
                   gradle sonar \
                     -Dsonar.projectKey=GS \
                     -Dsonar.projectName=gs-gradle \
